@@ -16,19 +16,82 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Proyecto de Aplicación de Formulario y Tabla
 
-## Learn More
+Este es un proyecto de una aplicación web que consta de un formulario de inicio de sesión y otro formulario para ingresar datos, los cuales se muestran en una tabla en tiempo real. Utiliza tecnologías como React, Next.js, Tailwind CSS y JSON Server.
 
-To learn more about Next.js, take a look at the following resources:
+## Características
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Formulario de inicio de sesión: Permite a los usuarios autenticarse en la aplicación.
+- Formulario de ingreso de datos: Los usuarios pueden ingresar datos en un formulario, que luego se muestra en una tabla en tiempo real.
+- Tabla de datos: Muestra los datos ingresados por los usuarios en una tabla, actualizándose automáticamente cuando se agrega nueva información.
+- Estilos responsivos: Los componentes están estilizados utilizando Tailwind CSS para lograr un diseño responsive y atractivo.
+- API simulada: Utiliza JSON Server para simular una API y almacenar los datos ingresados por los usuarios.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Dependencias utilizadas
 
-## Deploy on Vercel
+- axios: ^1.4.0
+- next: 13.4.6
+- react: 18.2.0
+- react-icons: ^4.9.0
+- sweetalert2: ^11.7.12
+- tailwindcss: 3.3.2
+- yup: ^1.2.0
+- json-server: ^0.16.3
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Instalación
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clona este repositorio en tu máquina local.
+2. Navega hasta la carpeta del proyecto.
+3. Ejecuta el siguiente comando para instalar las dependencias:
+
+
+Aquí tienes el contenido actualizado para el archivo README.md que incluye la descripción y la lista de dependencias, así como las instrucciones para instalar y ejecutar el proyecto con el JSON Server:
+
+markdown
+Copy code
+# Proyecto de Aplicación de Formulario y Tabla
+
+Este es un proyecto de una aplicación web que consta de un formulario de inicio de sesión y otro formulario para ingresar datos, los cuales se muestran en una tabla en tiempo real. Utiliza tecnologías como React, Next.js, Tailwind CSS y JSON Server.
+
+## Características
+
+- Formulario de inicio de sesión: Permite a los usuarios autenticarse en la aplicación.
+- Formulario de ingreso de datos: Los usuarios pueden ingresar datos en un formulario, que luego se muestra en una tabla en tiempo real.
+- Tabla de datos: Muestra los datos ingresados por los usuarios en una tabla, actualizándose automáticamente cuando se agrega nueva información.
+- Estilos responsivos: Los componentes están estilizados utilizando Tailwind CSS para lograr un diseño responsive y atractivo.
+- API simulada: Utiliza JSON Server para simular una API y almacenar los datos ingresados por los usuarios.
+
+## Dependencias utilizadas
+
+- axios: ^1.4.0
+- next: 13.4.6
+- react: 18.2.0
+- react-icons: ^4.9.0
+- sweetalert2: ^11.7.12
+- tailwindcss: 3.3.2
+- yup: ^1.2.0
+- json-server: ^0.16.3
+
+## Instalación
+
+1. Clona este repositorio en tu máquina local.
+2. Navega hasta la carpeta del proyecto.
+3. Ejecuta el siguiente comando para instalar las dependencias:
+
+npm install
+
+
+4. Inicia el JSON Server para simular la API ejecutando el siguiente comando:
+
+npm run server
+
+5. En otra terminal, ejecuta el siguiente comando para iniciar la aplicación:
+
+npm run dev
+
+6. La aplicación estará disponible en tu navegador en `http://localhost:3000`.
+
+¡Disfruta de la aplicación de formulario y tabla en tiempo real!
+
+

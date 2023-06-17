@@ -1,0 +1,74 @@
+{
+  "electionData": [
+    {
+      "year": "1990",
+      "party": "democrata",
+      "county": "Florida",
+      "voteCount": "2344",
+      "id": 1
+    },
+    {
+      "year": "2002",
+      "party": "nacionalista",
+      "county": "Hawaii",
+      "voteCount": "3244",
+      "id": 2
+    },
+    {
+      "year": "2005",
+      "party": "republicano",
+      "county": "Arizona",
+      "voteCount": "30044",
+      "id": 3
+    },
+    {
+      "year": "2021",
+      "party": "democrata",
+      "county": "Hawaii",
+      "voteCount": "3450",
+      "id": 4
+    },
+    {
+      "year": "2002",
+      "party": "democrata",
+      "county": "Florida",
+      "voteCount": "1300",
+      "id": 5
+    },
+    {
+      "year": "2022",
+      "party": "democrata",
+      "county": "Florida",
+      "voteCount": "2670",
+      "id": 6
+    },
+    {
+      "year": "2015",
+      "party": "democrata",
+      "county": "Hawaii",
+      "voteCount": "1345",
+      "id": 7
+    },
+    {
+      "year": "2007",
+      "party": "nacionalista",
+      "county": "Hawaii",
+      "voteCount": "2015",
+      "id": 8
+    },
+    {
+      "year": "2015",
+      "party": "democrata",
+      "county": "Florida",
+      "voteCount": "1234",
+      "id": 9
+    },
+    {
+      "year": "2015",
+      "party": "democrata",
+      "county": "Florida",
+      "voteCount": "2401",
+      "id": 10
+    }
+  ]
+}
