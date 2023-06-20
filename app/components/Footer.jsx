@@ -1,48 +1,45 @@
-import { FaFacebookF, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
-import Link from 'next/link';
-
-
+import { FaFacebookF, FaYoutube, FaInstagram, FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
-  return (
+    return (
     <footer className="text-center text-white bg-indigo-600">
-      <div className="container flex justify-center py-5">
+        <div className="container flex justify-center py-5">
         <button
-          type="button"
-          className="btn btn-primary btn-lg btn-floating mx-2 bg-indigo-600"
+            type="button"
+            className="btn btn-primary btn-lg btn-floating mx-2 bg-indigo-600"
         >
-          <FaFacebookF />
+            <FaFacebookF />
         </button>
         <button
-          type="button"
-          className="btn btn-primary btn-lg btn-floating mx-2 bg-indigo-600"
+            type="button"
+            className="btn btn-primary btn-lg btn-floating mx-2 bg-indigo-600"
         >
-          <FaYoutube />
+            <FaYoutube />
         </button>
         <button
-          type="button"
-          className="btn btn-primary btn-lg btn-floating mx-2 bg-indigo-600"
+            type="button"
+            className="btn btn-primary btn-lg btn-floating mx-2 bg-indigo-600"
         >
-          <FaInstagram />
+            <FaInstagram />
         </button>
         <button
-          type="button"
-          className="btn btn-primary btn-lg btn-floating mx-2 bg-indigo-600"
+            type="button"
+            className="btn btn-primary btn-lg btn-floating mx-2 bg-indigo-600"
         >
-          <FaTwitter />
+            <FaTwitter />
         </button>
-      </div>
+        </div>
 
-      <div className="text-center py-3 bg-opacity-20 bg-black">
-        © 2023 - Made with{' '}
+        <div className="text-center py-3 bg-opacity-20 bg-black">
+        © 2023 - Made with{" "}
         <span role="img" aria-label="Love">
-          ❤️
-        </span>{' '}
+            ❤️
+        </span>{" "}
         by <Link href="">Mary Arroyo</Link>
-      </div>
+        </div>
     </footer>
-  );
+    );
 };
 
 export default Footer;
-
