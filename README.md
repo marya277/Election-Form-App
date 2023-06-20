@@ -46,52 +46,5 @@ Este es un proyecto de una aplicación web que consta de un formulario de inicio
 3. Ejecuta el siguiente comando para instalar las dependencias:
 
 
-Aquí tienes el contenido actualizado para el archivo README.md que incluye la descripción y la lista de dependencias, así como las instrucciones para instalar y ejecutar el proyecto con el JSON Server:
-
-markdown
-Copy code
-# Proyecto de Aplicación de Formulario y Tabla
-
-Este es un proyecto de una aplicación web que consta de un formulario de inicio de sesión y otro formulario para ingresar datos, los cuales se muestran en una tabla en tiempo real. Utiliza tecnologías como React, Next.js, Tailwind CSS y JSON Server.
-
-## Características
-
-- Formulario de inicio de sesión: Permite a los usuarios autenticarse en la aplicación.
-- Formulario de ingreso de datos: Los usuarios pueden ingresar datos en un formulario, que luego se muestra en una tabla en tiempo real.
-- Tabla de datos: Muestra los datos ingresados por los usuarios en una tabla, actualizándose automáticamente cuando se agrega nueva información.
-- Estilos responsivos: Los componentes están estilizados utilizando Tailwind CSS para lograr un diseño responsive y atractivo.
-- API simulada: Utiliza JSON Server para simular una API y almacenar los datos ingresados por los usuarios.
-
-## Dependencias utilizadas
-
-- axios: ^1.4.0
-- next: 13.4.6
-- react: 18.2.0
-- react-icons: ^4.9.0
-- sweetalert2: ^11.7.12
-- tailwindcss: 3.3.2
-- yup: ^1.2.0
-- json-server: ^0.16.3
-
-## Instalación
-
-1. Clona este repositorio en tu máquina local.
-2. Navega hasta la carpeta del proyecto.
-3. Ejecuta el siguiente comando para instalar las dependencias:
-
-npm install
-
-
-4. Inicia el JSON Server para simular la API ejecutando el siguiente comando:
-
-npm run server
-
-5. En otra terminal, ejecuta el siguiente comando para iniciar la aplicación:
-
-npm run dev
-
-6. La aplicación estará disponible en tu navegador en `http://localhost:3000`.
-
-¡Disfruta de la aplicación de formulario y tabla en tiempo real!
 
 
