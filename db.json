@@ -69,6 +69,20 @@
       "county": "Florida",
       "voteCount": "2401",
       "id": 10
+    },
+    {
+      "year": "7385",
+      "party": "democrata",
+      "county": "Florida",
+      "voteCount": "347346",
+      "id": 11
+    },
+    {
+      "year": "2007",
+      "party": "democrata",
+      "county": "Hawaii",
+      "voteCount": "12993",
+      "id": 12
     }
   ]
 }

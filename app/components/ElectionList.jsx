@@ -9,10 +9,9 @@ const ElectionList = () => {
     useEffect(() => {
     const fetchData = async () => {
         try {
-        // Realizar la llamada GET a la API para obtener los datos
         const response = await axios.get("http://localhost:3004/electionData");
 
-        // Actualizar el estado con los datos obtenidos
+        // Actualizando el estado con los datos obtenidos
         updateElectionData(response.data);
         } catch (error) {
         console.error(error);
@@ -23,31 +22,34 @@ const ElectionList = () => {
     }, []);
 
     return (
-    <div className="container mx-auto px-5">
-        <h2 className="text-center text-2xl font-bold mb-4">Election Data</h2>
+        <div className="container mx-auto px-5">
+        <h2 className="text-center text-2xl font-bold mb-4 bg-indigo-500 text-white py-2 rounded-md animate-pulse">
+          Election Data
+        </h2>
         <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-300">
+          <table className="min-w-full bg-white border border-gray-300">
             <thead>
-            <tr>
+              <tr>
                 <th className="py-2 px-4 border-b">Year</th>
                 <th className="py-2 px-4 border-b">Party</th>
                 <th className="py-2 px-4 border-b">County</th>
                 <th className="py-2 px-4 border-b">Vote Count</th>
-            </tr>
+              </tr>
             </thead>
             <tbody>
-            {electionData.map((data) => (
+              {electionData.map((data) => (
                 <tr key={data.id}>
-                <td className="py-2 px-4 border-b">{data.year}</td>
-                <td className="py-2 px-4 border-b">{data.party}</td>
-                <td className="py-2 px-4 border-b">{data.county}</td>
-                <td className="py-2 px-4 border-b">{data.voteCount}</td>
+                  <td className="py-2 px-4 border-b">{data.year}</td>
+                  <td className="py-2 px-4 border-b">{data.party}</td>
+                  <td className="py-2 px-4 border-b">{data.county}</td>
+                  <td className="py-2 px-4 border-b">{data.voteCount}</td>
                 </tr>
-            ))}
+              ))}
             </tbody>
-        </table>
+          </table>
         </div>
-    </div>
+      </div>
+      
     );
 };
 

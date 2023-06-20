@@ -63,84 +63,85 @@ const ElectionForm = () => {
 
   return (
     <div className="bg-gray-100 md:w-1/2 lg:w-2/5">
-      <form onSubmit={handleSubmit} className="max-w-full mx-auto p-5 space-y-5 items-center">
-        <h3 className="text-center font-bold text-white bg-indigo-500 py-4 mb-5 w-full">Election</h3>
+  <form onSubmit={handleSubmit} className="max-w-full mx-auto p-5 space-y-5 items-center">
+    <h3 className="text-center font-bold text-white bg-indigo-500 py-4 mb-5 w-full">Election</h3>
 
-        <label htmlFor="year" className="font-bold">
-          Year:
-        </label>
-        <input
-          type="number"
-          id="year"
-          name="year"
-          value={year}
-          onChange={(e) => setYear(e.target.value)}
-          placeholder="Enter year"
-          required
-          min={1000}
-          max={9999}
-          pattern="^(?!00)[0-9]{4}$"
-          className="border-gray-300 border py-1 px-3 mb-5 w-full"
-        />
+    <label htmlFor="year" className="font-bold mt-2 block">
+      Year:
+    </label>
+    <input
+      type="number"
+      id="year"
+      name="year"
+      value={year}
+      onChange={(e) => setYear(e.target.value)}
+      placeholder="Enter year"
+      required
+      min={1000}
+      max={9999}
+      pattern="^(?!00)[0-9]{4}$"
+      className="border-gray-300 border py-1 px-3 mb-3 w-full"
+    />
 
-        <label htmlFor="party" className="font-bold">
-          Political Party:
-        </label>
-        <select
-          id="party"
-          name="party"
-          value={party}
-          onChange={(e) => setParty(e.target.value)}
-          required
-          className="border-gray-300 border py-1 px-3 mb-5 w-full"
-        >
-          <option value="">Select one</option>
-          <option value="democrata">Democrata</option>
-          <option value="republicano">Republicano</option>
-          <option value="nacionalista">Nacionalista</option>
-        </select>
+    <label htmlFor="party" className="font-bold my-2 block">
+      Political Party:
+    </label>
+    <select
+      id="party"
+      name="party"
+      value={party}
+      onChange={(e) => setParty(e.target.value)}
+      required
+      className="border-gray-300 border py-1 px-3 mb-3 w-full"
+    >
+      <option value="">Select one</option>
+      <option value="democrata">Democrata</option>
+      <option value="republicano">Republicano</option>
+      <option value="nacionalista">Nacionalista</option>
+    </select>
 
-        <label htmlFor="county" className="font-bold">
-          County:
-        </label>
-        <select
-          id="county"
-          name="county"
-          value={county}
-          onChange={(e) => setCounty(e.target.value)}
-          required
-          className="border-gray-300 border py-1 px-3 mb-5 w-full"
-        >
-          <option value="">Select one</option>
-          <option value="Florida">Florida</option>
-          <option value="Hawaii">Hawaii</option>
-          <option value="Arizona">Arizona</option>
-        </select>
+    <label htmlFor="county" className="font-bold my-2 block">
+      County:
+    </label>
+    <select
+      id="county"
+      name="county"
+      value={county}
+      onChange={(e) => setCounty(e.target.value)}
+      required
+      className="border-gray-300 border py-1 px-3 mb-3 w-full"
+    >
+      <option value="">Select one</option>
+      <option value="Florida">Florida</option>
+      <option value="Hawaii">Hawaii</option>
+      <option value="Arizona">Arizona</option>
+    </select>
 
-        <label htmlFor="voteCount" className="font-bold">
-          Vote Count:
-        </label>
-        <input
-          type="number"
-          id="voteCount"
-          name="voteCount"
-          value={voteCount}
-          onChange={(e) => setVoteCount(e.target.value)}
-          required
-          min={1}
-          max={99999999999}
-          className="border-gray-300 border py-1 px-3 mb-5"
-        />
+    <label htmlFor="voteCount" className="font-bold my-2 block">
+      Vote Count:
+    </label>
+    <input
+      type="number"
+      id="voteCount"
+      name="voteCount"
+      value={voteCount}
+      onChange={(e) => setVoteCount(e.target.value)}
+      required
+      min={1}
+      max={99999999999}
+      className="border-gray-300 border py-1 px-3 mb-3 w-full"
+    />
 
-        <button
-          type="submit"
-          disabled={loading}
-          className="bg-indigo-600 hover:bg-blue-400 uppercase text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer transition-all"
-        >
-          {loading ? 'Guardando...' : 'Guardar'}
-        </button>
-      </form>
-    </div>
+    <button
+      type="submit"
+      disabled={loading}
+      className="bg-indigo-600 hover:bg-blue-400 uppercase text-white font-bold py-2 px-4 rounded mt-4 cursor-pointer transition-all"
+    >
+      {loading ? 'Guardando...' : 'Submit'}
+    </button>
+  </form>
+</div>
+
   );
 };
 
